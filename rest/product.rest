@@ -1,0 +1,28 @@
+### List all products
+GET {{host}}/product
+
+### Product by Id
+GET {{host}}/product/608d58e35d38332df4603f09
+
+### Add Product to Restaurant
+POST {{host}}/product/608d4c8fdb685a2f14847ba7
+Content-Type: application/json
+
+{
+  "name": "Mini Pizza",
+  "price": 1.99
+}
+
+
+### Edit product
+PATCH {{host}}/product/608d4c8fdb685a2f14847ba7
+Content-Type: application/json
+
+{
+  "name": "Big Pizza"
+}
+
+### Delete product
+DELETE {{host}}/product/608d58e35d38332df4603f09
+
+###

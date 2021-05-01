@@ -1,0 +1,36 @@
+GET {{host}}/restaurant
+###
+GET {{host}}/restaurant/608d4c8fdb685a2f14847ba7
+###
+
+POST {{host}}/restaurant
+Content-Type: application/json
+
+{
+  "name": "Max' Pizza",
+  "address": "Pizzastraße 16, 71111 Stuttgart"
+}
+
+###
+
+PATCH {{host}}/restaurant/608d4c8fdb685a2f14847ba7
+Content-Type: application/json
+
+{
+  "products": [
+    {
+      "_id": "608d56a732b9fb00dcc6b219",
+      "name": "Mini Pizza",
+      "price": 1.99
+    },
+    {
+      "_id": "608d58e25d38332df4603f08",
+      "name": "Mini Pizza",
+      "price": 1.99
+    }
+  ]
+}
+
+
+###
+DELETE {{host}}/restaurant/608d5e9ff016292d8c13d669
